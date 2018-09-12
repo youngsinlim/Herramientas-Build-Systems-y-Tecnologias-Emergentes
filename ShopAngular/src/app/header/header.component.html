@@ -1,0 +1,9 @@
+<nav class="nav bg-faded justify-content-end" role="navigation">
+  <a class="nav-link" (click)="showCart()">
+     <img src="../../assets/cart1.png" alt="" height="20" onmouseover="this.src='../../assets/cart.png';" onmouseout="this.src='../../assets/cart1.png'">
+     <span *ngIf="shoppingCartService.shoppingCartItems.length > 0"  class="badge badge-danger ">{{shoppingCartService.shoppingCartItems.length}}</span>
+   </a>
+  <a class="nav-link" (click)="logout()">
+    <img src="../../assets/logout1.png" alt="" height="20" onmouseover="this.src='../../assets/logout.png';" onmouseout="this.src='../../assets/logout1.png'">
+   </a>
+</nav>
